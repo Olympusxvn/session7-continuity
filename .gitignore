@@ -1,0 +1,22 @@
+# Dependencies / vendor
+node_modules/
+vendor/continuity-keeper/node_modules/
+vendor/continuity-keeper/pnpm-lock.yaml
+vendor/continuity-keeper/.continuity/
+vendor/continuity-keeper/.git/
+vendor/continuity-keeper/demo/
+vendor/continuity-keeper/docs/
+vendor/continuity-keeper/assets/
+.continuity/
+
+# Secrets / local MCP (example is committed)
+.cursor/mcp.json
+.env
+.env.*
+credentials.json
+**/.memwal/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

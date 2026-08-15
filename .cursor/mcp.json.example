@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "memwal": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mysten-incubation/memwal-mcp",
+        "--namespace",
+        "session7-continuity"
+      ],
+      "env": {
+        "MEMWAL_NAMESPACE": "session7-continuity",
+        "MEMWAL_SERVER_URL": "https://relayer.memory.walrus.xyz"
+      }
+    }
+  }
+}
