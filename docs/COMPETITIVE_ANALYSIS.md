@@ -37,6 +37,33 @@ We also audited **our own** `memwal_assistant` line: strong as a systems-memory 
 
 ---
 
+## Prompt Delta (Original CK → v3)
+
+**Original Continuity Keeper vs Continuity Keeper v3 (EvoPrompt 26)**
+
+|**Dimension**|**Original Continuity Keeper (Session 5)**|**EvoPrompt 26 (Session 7)**|
+|-|-|-|
+|**Core goal**|Portable, wallet-owned story bible with self-enforcing continuity|Same goal + eliminate author context-switch and entity-level amnesia|
+|**Namespace model**|Per-entity mini-namespaces (`{story}::char::{slug}`, etc.) + separate accretive namespaces|Single unified namespace (`session7-continuity` or author slug)|
+|**Canon representation<br />**|Flat typed notes per entity namespace|State graph: typed nodes (one fact = one memory) + `supersedes:` `<blob\_id>` edges|
+|**Mutation primitive<br />**|CLI `continuity supersede` → namespace-level `forget` + rewrite|In-chat HITL: preview obsolete node → explicit author confirm → `memwal\_remember` with `supersedes:`|
+|**Author experience on retcon**|Leave chat/IDE → run CLI → paste facts file (\~8–10 min observed, rate-limit hits)|Remain in chat; preview → confirm → write|
+|**Neighbor preservation**|Entire entity namespace wiped; appearance/traits/rules can vanish|Neighbors stay; only the superseded fact is marked obsolete|
+|**Cross-entity recall**|Impossible across mini-namespaces|Native (character + place + rule returned in one query)|
+|**Tool surface honesty**|MCP tools + mandatory CLI for supersession|Official MCP tools only; explicit ban on inventing memwal\_delete|
+|**Delete / retire model**|Real namespace forget (old blobs remain on-chain but removed from recall)|No delete API claimed; permanent removal stays on dashboard / signed Security Delete|
+|**Prompt vs platform split**|Prompt + CLI treated as one system|Prompt owns continuity policy only; job waits, token budgets, retries, secret scanning belong to platform/SDK/MCP|
+|**Dedup**|Cosine distance < 0.25 → skip|Same rule retained|
+|**Contradiction handling**|STOP + flag; wait for author choice|Same STOP + flag; treated as human-approval node|
+|**Write policy**|Durable canon only (no prose, no speculation)|Identical policy|
+|**Observed Mainnet cost of change**|Two HTTP 429s, empty recall (`dropped\_count: 2`), manual rebuild from local ledger|Same-thread supersede; neighbors retained; bulk write still subject to platform timeouts|
+
+**Summary**
+
+v3 keeps every strong discipline of the original (recall-first, contradiction-guard, durable-only writes, cosine dedup, typed notes) and replaces the mutation primitive and namespace model. The result is a thinner prompt that stays honest about current MCP capabilities and moves the author out of the terminal for ordinary retcons.
+
+---
+
 ## Mutations we killed (eval, not taste)
 
 | Candidate mutation | Why it looked attractive | What eval did |
