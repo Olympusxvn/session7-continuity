@@ -143,7 +143,7 @@ Copy-paste for the Session 7 / DeepSurge feedback field. Issues: [#591](https://
 
 **What worked**
 
-- Production relayer + `@mysten-incubation/memwal` CLI `rememberAndWait` / `rememberBulkAndWait` landed durable Mainnet blobs. **30 unique blob_ids** on account `0xd7ec…4287` after Days 1–4 of a real story (`ca_voi_con`). Day 4 also landed via official MCP `memwal_remember` into `session7-continuity`.
+- Production relayer + `@mysten-incubation/memwal` CLI `rememberAndWait` / `rememberBulkAndWait` landed durable Mainnet blobs. **30 unique blob_ids** on account `0xd7ec…4287` after Days 1–5 of a real story (`ca_voi_con`). Day 4–5 also used official MCP `memwal_remember` / `memwal_recall` on `session7-continuity`. Overnight Day 5 recall still preferred current Dry Dock + neighbors.
 - After a successful wait, semantic recall is good enough for canon: cosine dedup fired correctly on Day 2; Day 3 post-supersede recall returned **only current** Minh/Lan/Tide Ledger facts.
 - Collaborator review on #591 was accurate and falsifiable. We reproduced their claim: **`forget` on an exact namespace is synchronous** — immediate recall does not return the deleted marker. Thank you for pushing back on the 15s “indexer lag” story.
 - #592 was not ignored: SDK PR #605 implements `maxTokens` / truncation client-side. MCP knobs are still a follow-up.
@@ -170,10 +170,11 @@ Copy-paste for the Session 7 / DeepSurge feedback field. Issues: [#591](https://
 - [x] Before/After + Walrus Memory feedback from Days 1–3 (#591 probe: forget not stale; 429; dropped_count)
 - [x] Day 4 inline supersede evidence (Dry Dock `kyYS4X5w…` supersedes `CDx1J2d5…`; unified ns recall) · blob count **30**
 - [x] Article 10 rewritten (lived Days 1–4; honest #605 OPEN) — `docs/ARTICLE_10.md`
-- [ ] Day 5 proof pack / Inkray URL / screenshots
-- [ ] Link Article 10 (Inkray) + repo
-- [ ] DeepSurge / walform: paste §3 Before/After + §4 Feedback
-- [ ] Re-read once: **no** invented `memwal_delete` · **no** “PR #605 merged” · **no** SIGNAL_MUTATION intercept · **no** 15s forget-lag claim
+- [x] Day 5 proof pack — [`docs/DAY5_PROOF.md`](./DAY5_PROOF.md) · overnight recall [`logs/day5-recall.md`](../logs/day5-recall.md)
+- [x] DeepSurge paste §3 / §4 ready in DAY5_PROOF + this file
+- [x] Re-read: **no** invented `memwal_delete` · **no** “PR #605 merged” · **no** SIGNAL_MUTATION · **no** 15s forget-lag
+- [ ] Inkray publish URL (interim blog = repo Article 10)
+- [ ] Optional X `#Walrus` + chat screenshots
 - [x] MemWal GitHub feedback: [#591](https://github.com/MystenLabs/MemWal/issues/591) · [#592](https://github.com/MystenLabs/MemWal/issues/592) → PR [#605](https://github.com/MystenLabs/MemWal/pull/605) (open)
 - [x] Locked: no local MCP wrapper · Day 3 CLI before namespace switch
 

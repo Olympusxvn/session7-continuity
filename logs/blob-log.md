@@ -10,7 +10,7 @@
 | 2 | 2026-08-13 | 6 | Ch.1 scene; 3 candidates skipped (dedup <0.25: place Booth 7, Tide Ledger, near-copy timeline) |
 | 3 | 2026-08-14 | 10 | CLI supersede Minh/Lan/Tide Ledger/Red Buoy + 3 accretive. 429 twice. Pre-recall dropped_count (restore skipped). |
 | 4 | 2026-08-15 | 6 | v3 HITL + unified `session7-continuity`. Bulk 2/6 timeout; singles landed. Event write 429 then job timeout (skipped). |
-| 5 | | | Proof pack |
+| 5 | 2026-08-16 | 0 | Proof recall clean. Restore 0/5 skip. Timeline remember timed out ×2 (not retried). |
 | **Total** | | **30** unique in ledger (29 story + forgotten #591 probe) | |
 
 ## Line items (one line per remember)

@@ -72,7 +72,7 @@ recall → HITL contradiction-guard → remember
 ## ⚖️ For judges — 5 min verify
 
 **No secrets. No wallet required to read the prompt and the evidence.**  
-Contest floor is **≥10 Mainnet blobs**. This run: **30 unique `blob_id`s** (Days 1–4). Day 5 blog still open.
+Contest floor is **≥10 Mainnet blobs**. This run: **30 unique `blob_id`s** (Days 1–5). Overnight Day 5 recall still current. Inkray URL after you publish.
 
 
 
@@ -225,7 +225,7 @@ Dedicated Sessions wallet. All story memory on **Walrus Mainnet**.
 | 2   | Ch.1 Harbor Node; cosine skip ×3                         | 6          |
 | 3   | CLI supersede + twist                                    | 10         |
 | 4   | v3 HITL + unified ns                                     | 6          |
-| 5   | Proof pack / blog                                        | open       |
+| 5   | Proof pack / overnight recall                            | 0 (timeout) |
 
 
 Sample explorer: [Dry Dock HITL blob](https://walruscan.com/mainnet/blob/kyYS4X5wpxiVmp9Zn858NrfNedu7hegKJqm_WnXFRvU)
@@ -279,6 +279,7 @@ node vendor/continuity-keeper/tools/continuity/cli.mjs health
 | `[prompt/PHASE_B_continuity-keeper.md](prompt/PHASE_B_continuity-keeper.md)`                         | Same text as FINAL                                  |
 | `[docs/COMPETITIVE_ANALYSIS.md](docs/COMPETITIVE_ANALYSIS.md)`                                       | Quantitative matrix + killed mutations              |
 | `[docs/ARTICLE_10.md](docs/ARTICLE_10.md)`                                                           | Inkray Article 10 (architectural audit)             |
+| `[docs/DAY5_PROOF.md](docs/DAY5_PROOF.md)`                                                           | DeepSurge collect + §3/§4 paste                     |
 | `[docs/submission-DRAFT.md](docs/submission-DRAFT.md)`                                               | DeepSurge §1–§4 draft                               |
 | `[docs/HARNESS-CONTRACT.md](docs/HARNESS-CONTRACT.md)`                                               | Platform vs prompt (next rung, not a local wrapper) |
 | `[docs/ISSUES-591-592.md](docs/ISSUES-591-592.md)`                                                   | Team replies + PR #605 status                       |
@@ -324,7 +325,7 @@ node vendor/continuity-keeper/tools/continuity/cli.mjs health
 | 1 friction + 1 improvement                               | [§ Friction](#-friction--one-idea)                                                                                                     |
 | Issue on MemWal                                          | #591 · #592                                                                                                                            |
 | Issue on **original prompt** GitHub                      | Still open for Day 5 (file on [yukitran03/continuity-keeper](https://github.com/yukitran03/continuity-keeper) if the form requires it) |
-| Blog                                                     | [docs/ARTICLE_10.md](docs/ARTICLE_10.md) — publish to Inkray on Day 5                                                                  |
+| Blog                                                     | [docs/ARTICLE_10.md](docs/ARTICLE_10.md) · pack [DAY5_PROOF.md](docs/DAY5_PROOF.md) — Inkray URL after publish                         |
 
 
 ---

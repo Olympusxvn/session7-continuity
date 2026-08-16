@@ -35,5 +35,7 @@
 - Idea: v3 was right not to invent `waitForRememberJob` in the prompt — MCP still times out while the relayer may or may not finish. Stay in chat; retry singles; do not CLI-forget. Neighbors (hoodie / one-ear / liquidated+backup) stayed without rewriting a facts file.
 - Proof: post-await recall prefers Dry Dock current node (`kyYS4X5w…`) over “Harbor Node Booth 7 regular.” Phase A Minh ns still holds Ch.2 `CDx1J2d5…` (immutable history; v3 does not wipe it).
 
-## Day 5
--
+## Day 5 (proof pack — 2026-08-16)
+- Smooth: Overnight `memwal_recall` on `session7-continuity` still ranked Dry Dock + `supersedes: CDx1J2d5…` first; hoodie / one-ear / Tide Signal 60m still in the same query. `memwal_health` ok. PR #605 still **OPEN**. Scene coda: `logs/scenes/ch4-day5-proof.md`. Pack: `docs/DAY5_PROOF.md` · dump: `logs/day5-recall.md`.
+- Friction: `memwal_restore` on the unified ns: `restored: 0, skipped: 5, truncated: true` at limit 100 (same decrypt/skip class as Day 3). Day 5 timeline `remember` **timed out twice**; post-wait recall did not show the new line — did not third-write or forget. Count stays **30**.
+- Idea: Day 5 proof is **recall that survived a night**, not more blobs. DeepSurge blog field still needs the Inkray URL after publish; repo Article 10 is the interim link. X / chat screenshots are author-only.
