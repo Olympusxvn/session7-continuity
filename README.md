@@ -96,6 +96,9 @@ node vendor/continuity-keeper/tools/continuity/cli.mjs recall --ns session7-cont
   --query "Minh Dry Dock Lan Tide Signal" --k 8 --json
 ```
 
+**The Pain:**
+**For author:** Canon amnesia, and a novelist with CLI.
+**For dev:** Heavy Prompt, Cognitive Fatigue and Format Drift in long chat, face up to the index lags.
 **What the prompt solves (2–5 sentences):** Original Continuity Keeper stores a story bible on Walrus Memory but **namespace-forgets a whole character** to change one fact, and pushes authors into a CLI. v3 keeps recall-first / contradiction-guard / cosine dedup, then models canon as **nodes + supersede edges** on **one** namespace. Retcon is HITL in chat (`preview` → confirm → `memwal_remember`). Job waits, token budgets, and permanent blob delete stay on the **platform** — this prompt does not invent `memwal_delete` or a 15s index cache.
 
 ---
